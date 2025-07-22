@@ -1,0 +1,89 @@
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #eeaaf4;
+    color: #333;
+    text-align: center;
+    margin: 4% 5%;
+}
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+#start-btn {
+    background-color:floralwhite;
+    color:darkmagenta;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    margin-top: 30px;
+    
+}
+
+#start-btn:hover {
+    transform: scale(1.2);
+}
+
+#replay-btn {
+    background-color:darkmagenta;
+    color: floralwhite;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    margin-top: 30px;
+}
+
+#replay-btn:hover {
+    transform: scale(1.2);
+}
+
+.cup button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cup button:hover {
+  transform: scale(1.1);
+}
+.cup {
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    display: none;
+}
+
+.lifted {
+    transform: translateY(-30px);
+    transition: transform 0.4s ease;
+}
+
+@keyframes shuffle {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(30px); }
+    50%  { transform: translateX(-30px); }
+    75%  { transform: translateX(15px); }
+    100% { transform: translateX(0); }
+}
+
+.shuffling button {
+    animation: shuffle 0.8s ease-in-out;
+}

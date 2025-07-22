@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Cups and a Ball</title>
+    <link rel="icon" href="asserts/images/favicon.png" type="image/png" class="favicon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>3 Cups and a Ball</h1>
+    <p>Welcome to the game of 3 Cups and a Ball! Try to guess where the ball is hidden under the cups.</p>
+
+    <div class="game-container">
+        <div class="cup" id="cup1">
+            <button>
+                <img src="./asserts/images/cup.png" alt="Cup" height="100" width="75">
+            </button>
+            <img src="./asserts/images/ball.png" alt="Ball" class="ball" id="ball1" height="50" width="50">
+        </div>
+        <div class="cup" id="cup2">
+            <button>
+                <img src="./asserts/images/cup.png" alt="Cup" height="100" width="75">    
+            </button>
+            <img src="./asserts/images/ball.png" alt="Ball" class="ball" id="ball2" height="50" width="50">
+        </div>
+        <div class="cup" id="cup3">
+            <button>
+                <img src="./asserts/images/cup.png" alt="Cup" height="100" width="75">
+            </button>
+            <img src="./asserts/images/ball.png" alt="Ball"class="ball" id="ball3" height="50" width="50">
+        </div>
+    </div>
+
+    <div class="start-btn"><button id="start-btn">Start</button></div>
+        <div id="message"></div>
+    <div class="replay-bth"><button id="replay-btn">Replay</button></div>
+    <script src="script.js"></script>
+</body>
+</html>
