@@ -23,18 +23,6 @@ I originally built the Python console version during my second year of B.Tech as
 - Interactive cup selection with win/lose feedback
 - Replay option without page reload
 
-## How to Play
-
-### Python Version
-- Run `python cups_and_balls.py` (or your Python filename)
-- Follow the prompts in the terminal to guess and continue playing
-
-### JavaScript Version
-- Open `index.html` in a modern web browser
-- Click **Start** to shuffle the cups
-- Click on a cup to guess where the ball is hidden
-- See the result and use **Replay** to try again
-
 ## Technologies Used
 - Python 3 (random module)
 - HTML5, CSS3, JavaScript (DOM manipulation)
